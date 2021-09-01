@@ -10,7 +10,7 @@ public class Nyvia380Application {
         SpringApplication.run(Nyvia380Application.class, args);
 
 
-
+        TestClass.print();
     }
 
 }
