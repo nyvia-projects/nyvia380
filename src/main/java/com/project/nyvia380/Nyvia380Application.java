@@ -12,6 +12,7 @@ public class Nyvia380Application {
 
         TestClass.print();
         TestClass.printThis("Testing Git Collaborator Privilege.");
+        TestClass.printThis("End of Test");
     }
 
 }
