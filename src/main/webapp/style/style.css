@@ -18,7 +18,7 @@ main{
 	opacity: 0.8;
 	filter: alpha(opacity=50);
 	color: white;
-	font-size: 17px;
+	font-size: 18px;
 	font-family: 'Titillium Web', sans-serif;
 	
 }
@@ -27,7 +27,7 @@ main{
 	display: inline-block;
 	text-decoration: none;
 	margin: 0 90px;
-	padding: 7px;
+	vertical-align: middle;
 }
 
 #panel ul {
@@ -51,7 +51,6 @@ li a:hover{
 }
 #mylogo{
 	vertical-align: middle;
-	margin-bottom: 3px;
 	height: 26px;
 	width: 26px;
 }
@@ -104,11 +103,16 @@ li a:hover{
 #mywatch{
 	background-color: #303030;
 	width: 220px;
+
+
 }
 #mywatch p{
 	color: white;
-	font-size: 30px;
+	font-size: 26px;
 	font-family: 'Titillium Web', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
 footer{
 	position: absolute;
