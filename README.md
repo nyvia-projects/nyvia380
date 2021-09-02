@@ -44,6 +44,6 @@ Other languages, tools, libraries and technologies we WILL use
 Other languages, tools and technologies we MIGHT use
 
     Jakarta Server Pages (JSP)              for dynamic Web Pages
-    Kotlin Language                         for concurently running with Java & Back End Scripting
+    Kotlin Language                         for general purpose concurent usage with Java & Back End Scripting
     Selenium                                for Automation Testing
 
