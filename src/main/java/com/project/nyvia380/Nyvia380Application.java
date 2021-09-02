@@ -7,14 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Nyvia380Application {
 
     public static void main(String[] args) {
+        System.setProperty("server.port", "8080");
         SpringApplication.run(Nyvia380Application.class, args);
 
-        TestClass.print();
-        TestClass.printThis("Testing Git Collaborator Privilege.");
-        TestClass.printThis("End of Test");
-//------------------------------------------------------------------------------
-        TestClass.printThis("Testing Forked Repo Push.");
-        TestClass.printThis("End of Test");
+
 
     }
 
