@@ -38,7 +38,8 @@ main{
 	color: white;
 }
 .menuelement1{
-	
+	margin-top: 1px;
+	padding-bottom: 4px;
 	text-decoration: none;
 	color: white;
 }
@@ -56,23 +57,22 @@ li a:hover{
 }
 .dropdownmenu1{
 	display: none;
-	margin-top: 12px;
+	/*margin-top: 12px;*/
 	list-style-type: none;
 	padding-bottom: 20px;
 	position: absolute;
 	width: 110px;
-	top: 41px;
 	background-color: red;
 }
 .dropdownmenu2{
 	display: none;
-	margin-top: 12px;
+	/*margin-top: 12px;*/
 	list-style-type: none;
 	padding-bottom: 20px;
 	position: absolute;
-	margin-left: 13px;
-	padding-top: 10px;
-	top: 190px;
+	/*margin-left: 13px;*/
+	/*padding-top: 10px;*/
+	/*top: 190px;*/
 	width: 110px;
 	background-color: blue;
 }

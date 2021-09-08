@@ -23,15 +23,14 @@ public class Nyvia380Application {
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/");*/
 
-        LaunchBrowserTo("http://localhost:8080/");
+//        LaunchBrowserTo("http://localhost:8080/");
 
     }
-/*
     @EventListener({ApplicationReadyEvent.class})
     void applicationReadyEvent() {
         System.out.println("Application started ... launching browser now");
         LaunchBrowserTo("http://localhost:8080/");
-    }*/
+    }
 
     public static void LaunchBrowserTo(String url) {
         if(Desktop.isDesktopSupported()){

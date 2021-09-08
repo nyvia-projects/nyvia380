@@ -21,10 +21,17 @@ You need:
 
     No Database selected nor in use yet, so check for updates
 
+#For Collaboration & Project / Task Management
+
+    Asana                                   project & task management tool
+    Code With Me                            plugin for IntelliJ IDEA for collaboration
+    Discord*                                chats and meeting calls
+
+
 #Technical Info
 
 ---
-Main Language Used: Java
+Main Language Used: **Java**
 
 Database:
 
@@ -33,17 +40,28 @@ Database:
 
 Other languages, tools, libraries and technologies we WILL use
 
-    Spring Framework                        for build & testing
+    Spring Framework                        for Build
+    
+    JUnit5                                  for Testing
 
-    html                                    for structure of Web pages
+    html, Spring MVC                        for Structure of Web Pages
 
-    CSS/SASS/Bootstrap                      for design of Web pages & elements
+    CSS/SASS/Bootstrap                      for Design of Web Pages & Elements
 
-    JavaScript/jQuery                       for Front End scripting (functionality & design)
+    JavaScript/jQuery                       for Front End Scripting (functionality & design)
 
 Other languages, tools and technologies we MIGHT use
 
-    Jakarta Server Pages (JSP)              for dynamic Web Pages
-    Kotlin Language                         for general purpose concurent usage with Java & Back End Scripting
-    Selenium                                for Automation Testing
+    Jakarta Server Pages (JSP)              
+    Thymeleaf                               for Dynamic Web Pages
+    Kotlin Language                         for General purpose concurent usage w/ Java & Back End Scripting
+    Selenium                                for Automation Testing with JUnit classes
+    ...   
+
+Other notes
+
+    We might deloy final project artifcat into Apache Tomcat Server
+    We will also try to develop Messaging Service 
+    And have a really cool, responsive, animated web design
+    
 
