@@ -1,5 +1,6 @@
-package com.project.nyvia380.controller;
+package com.project.nyvia380.common;
 
+import com.project.nyvia380.common.page.HomePageController;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

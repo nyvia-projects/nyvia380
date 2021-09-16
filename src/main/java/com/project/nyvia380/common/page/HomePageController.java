@@ -1,13 +1,12 @@
-package com.project.nyvia380.controller;
+package com.project.nyvia380.common.page;
 
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/home")
-@RestController
+@RestController("homePageController")
 public class HomePageController {
 
     @GetMapping

@@ -27,7 +27,7 @@ public class Nyvia380Application {
 
     }
     @EventListener({ApplicationReadyEvent.class})
-    void applicationReadyEvent() {
+    public void applicationReadyEvent() {
         System.out.println("Application started ... launching browser now");
         LaunchBrowserTo("http://localhost:8080/");
     }
