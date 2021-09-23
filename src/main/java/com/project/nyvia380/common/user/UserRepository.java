@@ -1,7 +1,10 @@
 package com.project.nyvia380.common.user;
 
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository {
+public interface UserRepository extends MongoRepository<User, String> {
+
+
 }

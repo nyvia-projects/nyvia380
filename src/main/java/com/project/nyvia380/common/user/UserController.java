@@ -1,14 +1,14 @@
 package com.project.nyvia380.common.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/people")
+@RequestMapping("/v1/people")
 public class UserController {
-
 
     private final UserService userService;
 
@@ -17,8 +17,37 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
+    @GetMapping("/message")
     public String index() {
         return userService.printUserPageMessage();
     }
+
+    @PostMapping("/updateUser")
+    public void updateUser(@RequestBody User user) {
+        userService.updateUser(user);
+    }
+
+    @PutMapping("/insertUser")
+    public void insertUser(@RequestBody User user) {
+        userService.insertUser(user);
+    }
+
+    @DeleteMapping("/deleteUser/{id}")
+    public void deleteUser(@PathVariable String id) {
+        userService.deleteUser(id);
+    }
+
+    @GetMapping("/all")
+    public List<User> getUsers(){
+        return userService.getUsers();
+    }
+
+    @GetMapping("/findUser/{id}")
+    public Optional<User> getUser(@PathVariable String id) {
+        return userService.getUser(id);
+    }
+
+
+
+
 }
