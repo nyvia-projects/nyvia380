@@ -16,8 +16,8 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public String printUserPageMessage(){
-        return "This is Users/People Page!";
+    public String getUserMessage(){
+        return "User says hi!";
     }
 
     public void insertUser(User user) {

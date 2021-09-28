@@ -2,12 +2,14 @@ package com.project.nyvia380.common.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/v1/people")
+@RequestMapping("/")
 public class UserController {
 
     private final UserService userService;
@@ -18,8 +20,11 @@ public class UserController {
     }
 
     @GetMapping("/message")
-    public String index() {
-        return userService.printUserPageMessage();
+    public ModelAndView displayUserMessage() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("message",userService.getUserMessage());
+        modelAndView.setViewName("home");
+        return modelAndView;
     }
 
     @PostMapping("/updateUser")

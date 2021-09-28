@@ -3,10 +3,7 @@ package com.project.nyvia380.common.user;
 
 import com.project.nyvia380.common.user.group.Group;
 import com.project.nyvia380.common.user.roles.Roles;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -18,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@ToString
 //@Setter
 public class User {
     @Id
@@ -35,15 +33,6 @@ public class User {
         this.userName = userName;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userID='" + userID + '\'' +
-                ", userName='" + userName + '\'' +
-                ", userRole=" + userRole +
-                ", userGroups=" + userGroups +
-                '}';
-    }
 
     public void addToUserGroups(Group group){
         userGroups.add(group);
