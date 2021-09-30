@@ -7,9 +7,8 @@
 </head>
 <body>
 <h1>Welcome to Nyvia Projects</h1>
-This is User message: ${message}
 
-<form action="add">
+<form action="example">
     <input type="text" name="t1"><br>
     <input type="text" name="t2"><br>
     <input type="submit">

@@ -33,7 +33,7 @@ public class Nyvia380Application extends SpringBootServletInitializer {
         registration.addMapping("/example");
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         SpringApplication.run(Nyvia380Application.class, args);
         /*
         System.setProperty("webdriver.chrome.driver", "src/main/resources/static/chromedriver.exe");
@@ -47,7 +47,7 @@ public class Nyvia380Application extends SpringBootServletInitializer {
 
 
 
-
+/*
     @EventListener({ApplicationReadyEvent.class})
     public void applicationReadyEvent() {
         System.out.println("Server running... launching browser...");
@@ -70,5 +70,5 @@ public class Nyvia380Application extends SpringBootServletInitializer {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 }
