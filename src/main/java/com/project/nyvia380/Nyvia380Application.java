@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.event.EventListener;
 
 import java.awt.*;
@@ -13,7 +15,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @SpringBootApplication
-public class Nyvia380Application {
+public class Nyvia380Application extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Nyvia380Application.class);
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(Nyvia380Application.class, args);
@@ -26,6 +33,9 @@ public class Nyvia380Application {
 //        LaunchBrowserTo("http://localhost:8080/");
 
     }
+
+
+
     @EventListener({ApplicationReadyEvent.class})
     public void applicationReadyEvent() {
         System.out.println("Server running... launching browser...");
